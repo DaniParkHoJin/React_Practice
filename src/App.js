@@ -1,6 +1,7 @@
-import Schedules from "./components/Schedules";
+import LoginContainer from './containers/member/LoginContainer';
+
 const App = () => {
-  return <Schedules />;
+  return <LoginContainer />;
 };
 
 export default App;
