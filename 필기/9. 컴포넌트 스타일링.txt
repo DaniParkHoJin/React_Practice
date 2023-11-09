@@ -37,11 +37,16 @@
 
 
 2. CSS Module
+
 	1) [파일이름]_[클래스 이름]__[해시값] 형태로 자동으로 만들어서 컴포넌트 스타일 클래스 이름이 중첩되는 현상을 방지해 주는 기술
+	
 	2) .module.css 확장자로 파일을 저장하기만 하면 CSS Module이 적용
 
 3. classnames
+
 	1) CSS 클래스를 조건부로 설정할 떄 매우 유용한 라이브러리
+		yarn add classnames
+	
 	2) classnames 간략 사용법
 	3) Sass와 함께 사용하기
 		- Sass를 사용할 때도 파일 이름 뒤에 .module.scss 확장자를 사용해 주면 CSS Module로 사용할 수 있습니다.
@@ -49,9 +54,16 @@
 	4) CSS Module이 아닌 파일에서 CSS Module 사용하기
 		- CSS Module에서 글로벌 클래스를 정의할 때 :global을 사용했던 것처럼 CSS Module이 아닌 .css/.scss 파일에서도 :local을 사용하여 CSS Module을 사용할 수 있습니다.
 		
-3. styled-components
+4. styled-components
+
 	1) 자바스크립트 파일 안에 스타일을 선언하는 방식 / CSS-in-JS라고 부릅니다.
+		yarn add styled-components
+		
+		참고)
+		yarn add sass classnames styleed-components
+	
 	2) styled-components와 일반 classNames를 사용하는 CSS/Sass를 비교했을 때, 가장 큰 장점은 props 값으로 전달해 주는 값을 쉽게 스타일에 적용할 수 있다는 것입니다.
+	
 	3) Tagged 템플릿 리터럴
 		- Tagged 템플릿 리터럴을 사용하면 템플릿 사이사이에 들어가는 자바스크립트 객체나 함수의 원본 값을 그대로 추출할 수 있습니다.
 		- styled-components는 이러한 속성을 사용하여 styled-components로 만든 컴포넌트의 props를 스타일 쪽에서 쉽게 조회할 수 있도록 해줍니다.
@@ -77,3 +89,7 @@
 
 
 	6) props에 따른 조건부 스타일링
+	
+	
+	
+	스토리북

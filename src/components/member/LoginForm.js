@@ -1,13 +1,17 @@
 import { useTranslation } from 'react-i18next';
+import { MainTitle } from '../../components/commons/TitleStyle';
+import { InputText } from '../../components/commons/InputStyle';
+
 
 const LoginForm = ({ onSubmit, onChange, form, error }) => {
   const { t } = useTranslation();
 
   return (
     <>
-      <h1>{t('로그인')}</h1>
+      <MainTitle>{t('로그인')}</MainTitle>
+
       <form onSubmit={onSubmit}>
-        <input
+        <InputText
           type="text"
           name="email"
           placeholder={t('이메일')}
@@ -16,7 +20,7 @@ const LoginForm = ({ onSubmit, onChange, form, error }) => {
         />
         {error.email && <div>{error.email}</div>}
 
-        <input
+        <InputText
           type="password"
           name="password"
           placeholder={t('비밀번호')}
