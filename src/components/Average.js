@@ -13,8 +13,10 @@ const Average = () => {
     const [number, setNumber] = useState(0);
 
     const handleChange = useCallback((e) => setNumber(e.currentTarget.value), []); // 처음 마운트 될때 1번말 생성
-    const handleCilck = useCallback(() => setlist(list.concat(Number(number))), [list]);
-    const avg = useMemo(() => getAverage(list), [list, number]);
+    // const handleCilck = useCallback(() => setlist(list.concat(Number(number))), [list]);
+    // const avg = useMemo(() => getAverage(list), [list, number]);
+
+    //const handleClick = useCallback(()=> setlist(list=>list.concat(Number(number))),[number],);
 
     return (
         <>
