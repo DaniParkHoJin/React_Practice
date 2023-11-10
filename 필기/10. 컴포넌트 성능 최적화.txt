@@ -35,3 +35,6 @@
 	-  두 번쨰 파라미터에 undefined를 넣고 세 번째 파라미터에 초기 상태를 만들어 주는 함수인 createBulkTodos를 넣어 주었는데, 이렇게 하면 컴포넌트가 맨 처름 렌더링될 때만 createBulkTodos 함수가 호출됩니다.
 
 4. react-virtualized를 사용한 렌더링 최적화
+
+
+react-dev-tools
